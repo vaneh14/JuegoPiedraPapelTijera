@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Workshop | Piedra, papel o tijera</title>
+        <link rel="icon" type="image/png" href="/assets/icono_pagina.svg">
+
+        <!--Estilos CSS-->
+        <link rel="stylesheet" href="style.css">
+        <!--Iconos FontAwesome-->
+        <script src="https://kit.fontawesome.com/f65129cba0.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <section class="principal">
+
+            <!--Puntajes-->
+            <div class="puntajes">
+                <div class="puntaje-jugador">
+                    <h2>Jugador</h2>
+                    <p>0</p>
+                </div>
+        
+                <div class="puntaje-computadora">
+                    <h2>Computadora</h2>
+                    <p>0</p>
+                </div>
+            </div>
+
+            <!--Tablero-->
+            <div class="tablero">
+                <h1 id="resultado">Elegí una opción</h1>
+
+                <div class="manos">
+                    <img src="/assets/piedra_izq.png" id="mano-jugador" class="mano-jugador" alt="imagen mano jugador">
+                    
+                    <!--Boton Restart-->
+                    <button type="button" class="boton-resetear" id="btn-resetear">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </button>
+
+                    <img src="/assets/piedra_der.png" id="mano-computadora" class="mano-computadora" alt="imagen mano computadora">
+                </div>
+
+                <!--Botones Opciones-->
+                <div class="opciones">
+                    <button type="button" class="boton-opciones" id="btn-piedra">
+                        <img src="/assets/piedra.png" class="opcion-jugador" alt="imagen piedra">
+                    </button>
+    
+                    <button type="button" class="boton-opciones" id="btn-papel">
+                        <img src="/assets/papel.png" class="opcion-jugador" alt="imagen papel">
+                    </button>
+    
+                    <button type="button" class="boton-opciones" id="btn-tijera">
+                        <img src="/assets/tijera.png" class="opcion-jugador" alt="imagen tijera">
+                    </button>
+                </div>
+                
+            </div>
+           
+        </section>
+
+    </body>
+
+    <footer>
+        <small>
+            2023 &#169
+            <div>Íconos por 
+                <a href="https://www.flaticon.com/free-icons/rock-paper-scissors" title="rock paper scissors icons" target="_blank">Rock paper scissors icons created by Freepik - Flaticon</a>
+            </div>
+        </small>
+    </footer>
+
+    <script src="app.js"></script>
+
+</html>
